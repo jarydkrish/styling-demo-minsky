@@ -36,7 +36,9 @@ const DemoPage = () => {
   return (
     <Container>
       <Navbar bg="dark" variant="dark" expand="lg" className="mb-4">
-        <Navbar.Brand href="#">React-Bootstrap Demo</Navbar.Brand>
+        <Navbar.Brand href="#">
+          React-Bootstrap Demo
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -63,7 +65,7 @@ const DemoPage = () => {
       )}
 
       <Row className="mb-4">
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>Text Input</Card.Title>
@@ -79,7 +81,7 @@ const DemoPage = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>Toggle Buttons</Card.Title>
@@ -100,7 +102,7 @@ const DemoPage = () => {
       </Row>
 
       <Row className="mb-4">
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>Checkbox</Card.Title>
@@ -114,7 +116,7 @@ const DemoPage = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>Progress</Card.Title>
@@ -125,30 +127,40 @@ const DemoPage = () => {
       </Row>
 
       <Row className="mb-4">
-        <Col>
-          <Button variant="primary" onClick={handleModalShow}>
-            Launch demo modal
-          </Button>
+        <Col xs={12}>
+          <Card>
+            <Card.Body>
+              <Card.Title>Modal Demo</Card.Title>
+              <Card.Text>
+                Click the button below to launch a demo modal.
+              </Card.Text>
+              <Card.Link>
+                <Button variant="primary" onClick={handleModalShow}>
+                  Launch demo modal
+                </Button>
+              </Card.Link>
 
-          <Modal show={showModal} onHide={handleModalClose}>
-            <Modal.Header closeButton>
-              <Modal.Title>Modal heading</Modal.Title>
-            </Modal.Header>
-            <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={handleModalClose}>
-                Close
-              </Button>
-              <Button variant="primary" onClick={handleModalClose}>
-                Save Changes
-              </Button>
-            </Modal.Footer>
-          </Modal>
+              <Modal show={showModal} onHide={handleModalClose}>
+                <Modal.Header closeButton>
+                  <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleModalClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary" onClick={handleModalClose}>
+                    Save Changes
+                  </Button>
+                </Modal.Footer>
+              </Modal>
+            </Card.Body>
+          </Card>
         </Col>
       </Row>
 
       <Row className="mb-4">
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>Spinner</Card.Title>
@@ -158,7 +170,7 @@ const DemoPage = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
+        <Col xs={12} md={6}>
           <Card>
             <Card.Body>
               <Card.Title>List Group</Card.Title>
