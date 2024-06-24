@@ -11,13 +11,13 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="/material"
+          href="#/material"
         >
           View Material UI
         </a>
         <a
           className="App-link"
-          href="/bootstrap"
+          href="#/bootstrap"
         >
           View Bootstrap
         </a>
