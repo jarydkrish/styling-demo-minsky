@@ -11,11 +11,15 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/material"
         >
-          Learn React
+          View Material UI
+        </a>
+        <a
+          className="App-link"
+          href="/bootstrap"
+        >
+          View Bootstrap
         </a>
       </header>
     </div>
